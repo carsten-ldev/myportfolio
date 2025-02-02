@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark light;
+  --light: #ffffff;
+  --dark: #171717;
+}
+
+
+
+body {
+  color: light-dark(var(--dark), var(--light)) ;
+  background: light-dark(var(--light), var(--dark));
+}
