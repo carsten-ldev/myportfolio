@@ -1,5 +1,5 @@
-import { Link } from "next-view-transitions";
 import { Project } from "../types/github";
+import Link from "next/link";
 
 export async function getRepos() {
     const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/projects`);
@@ -45,7 +45,7 @@ export default async function projectsPage() {
         </div>
         <section className="mt-12">
             <h2 className="font-extrabold text-4xl mb-3">Projects</h2>
-            <p className="mb-8">This is a showcase of my starred projects. <br />My github contains a lot of other repos used for trying different things. <br />Click 'read more' to learn more about each project. </p>
+            <p className="mb-8">This is a showcase of my starred projects. <br />My github contains a lot of other repos used for trying different things. <br />Click &lsqou;read more&lsquo; to learn more about each project. </p>
             <div className="grid gap-4 grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
                 {repos.map(repo => (
                     <article key={repo.id} className="p-6 border-teal-500 border">
