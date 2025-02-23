@@ -1,12 +1,9 @@
 import { NextResponse } from "next/server";
 import { marked } from "marked";
 
-export async function GET(request: Request, { params }: { params: { slug: string } }) {
+export async function GET(request: Request, { params }: { params: { slug: string } }) {    
+    const { slug } = params
     
-    const { slug } = await params
-    console.log("slug: ", slug);
-    
-
     const GITHUB_API_URL = `https://api.github.com/repos/${process.env.NEXT_PUBLIC_GITHUB_USER_NAME}/${slug}/contents/README.md`
 
     const headers = {
