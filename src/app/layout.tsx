@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Merriweather_Sans } from "next/font/google";
 import "./globals.css";
+import { ViewTransitions } from "next-view-transitions";
 
 const merriweathersans = Merriweather_Sans({
   variable: "--font-merriweather-sans",
@@ -19,12 +20,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${merriweathersans.variable} antialiased`}
-      >
-        {children}
-      </body>
-    </html>
+    <ViewTransitions>
+      <html lang="en">
+        <body
+          className={`${merriweathersans.variable} antialiased`}
+        >
+          {children}
+        </body>
+      </html>
+    </ViewTransitions>
   );
 }
