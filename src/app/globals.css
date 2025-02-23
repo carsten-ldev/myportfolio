@@ -14,3 +14,12 @@ body {
   color: light-dark(var(--dark), var(--light)) ;
   background: light-dark(var(--light), var(--dark));
 }
+
+
+.brand-name {
+  view-transition-name: --brand-name;
+}
+
+::view-transition-group(*) {
+  animation-duration: 0.5s;
+}
