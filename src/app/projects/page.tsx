@@ -16,7 +16,6 @@ export async function getRepos() {
 export default async function projectsPage() {
 
     const repos: Project[] = await getRepos()
-    //console.log(repos);
 
 
     if (!repos.length) {
