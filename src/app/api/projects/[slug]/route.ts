@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { marked } from "marked";
 
 export async function GET(request: Request, { params }: { params: { slug: string } }) {    
-    const { slug } = params
+    const { slug } = await params
     
     const GITHUB_API_URL = `https://api.github.com/repos/${process.env.NEXT_PUBLIC_GITHUB_USER_NAME}/${slug}/contents/README.md`
 
@@ -21,7 +21,6 @@ export async function GET(request: Request, { params }: { params: { slug: string
         const data = await response.json(); // ✅ Get JSON response
         const markdown = Buffer.from(data.content, "base64").toString("utf-8"); // ✅ Decode Base64
         const readmeHtml = await marked(markdown) // convert markdown to html
-        console.log(readmeHtml);
         
         return new NextResponse(readmeHtml, { status: 200, headers: { "Content-Type": "text/html" } });
 

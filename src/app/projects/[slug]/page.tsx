@@ -1,5 +1,4 @@
 export async function getData (slug: string) {
-    console.log(slug);
     
     const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/projects/${slug}`);
 
