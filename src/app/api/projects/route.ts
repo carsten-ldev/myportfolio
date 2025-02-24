@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { Project } from "@/app/types/github";
 
-async function GET(): Promise<NextResponse<Project[] | { error: string }>> {
+export async function GET(): Promise<NextResponse<Project[] | { error: string }>> {
 
     const GITHUB_API_URL = `https://api.github.com/users/${process.env.NEXT_PUBLIC_GITHUB_USER_NAME}/starred?sort=updated`
 
