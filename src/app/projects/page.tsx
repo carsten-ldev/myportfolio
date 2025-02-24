@@ -1,8 +1,11 @@
 import { Project } from "../types/github";
 import Link from "next/link";
 
+const API_BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || `https://${process.env.VERCEL_URL}`;
+
+
 async function getRepos() {
-    const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/projects`);
+    const response = await fetch(`${API_BASE_URL}/api/projects`);
 
   if (!response.ok) {
     throw new Error("Failed to fetch repositories");

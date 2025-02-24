@@ -1,6 +1,8 @@
 async function getData (slug: string) {
     
-    const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/projects/${slug}`);
+    const API_BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || `https://${process.env.VERCEL_URL}`;
+
+    const response = await fetch(`${API_BASE_URL}/api/projects/${slug}`);
 
     if (!response.ok) {
       throw new Error("Failed to fetch repository");
