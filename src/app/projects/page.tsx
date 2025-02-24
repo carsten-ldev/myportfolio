@@ -52,12 +52,14 @@ export default async function ProjectsPage() {
         </div>
         <section className="mt-12">
             <h2 className="font-extrabold text-4xl mb-3">Projects</h2>
-            <p className="mb-8">This is a showcase of my starred projects. <br />My github contains a lot of other repos used for trying different things. <br />Click &lsqou;read more&lsquo; to learn more about each project. </p>
+            <p className="mb-8">This is a showcase of my starred projects. <br />My github contains a lot of other repos used for trying different things. <br />Click &lsquo;read more&lsquo; to learn more about each project. </p>
             <div className="grid gap-4 grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
                 {repos.map(repo => (
                     <article key={repo.id} className="p-6 border-teal-500 border">
                         <p className="text-[0.625rem] font-bold uppercase tracking-widest text-gray-400">{repo.language || 'JavaScript'}</p>
-                        <h3 className="text-2xl font-bold mb-1">{repo.name}</h3>
+                        <h3 className="text-2xl font-bold mb-1">{repo.name} 
+                        {repo.name == "myportfolio" && <span className="text-xs font-bold italic">&nbsp;- this site</span>}
+                        </h3>
                         <p>{repo.description}</p>
                         <h4 className="font-bold mt-2 mb-1 text-gray-600">Technologies:</h4>
                         {repo.topics.map(topic => (
