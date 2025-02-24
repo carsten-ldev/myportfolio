@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { marked } from "marked";
 
-async function GET(
+export async function GET(
     request: NextRequest, 
     { params }: { params: Promise<{ slug: string }> }
 ) {    
