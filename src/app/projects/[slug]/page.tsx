@@ -10,7 +10,7 @@ async function getData (slug: string) {
     
 }
 
-export default async function repoPage( {params}: {params: Promise<{ slug: string }>}) {
+export default async function RepoPage( {params}: {params: Promise<{ slug: string }>}) {
 
     const { slug } = await params;
     const markup = await getData(slug)

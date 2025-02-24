@@ -1,7 +1,7 @@
 import { Project } from "../types/github";
 import Link from "next/link";
 
-export async function getRepos() {
+async function getRepos() {
     const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/projects`);
 
   if (!response.ok) {
@@ -13,7 +13,7 @@ export async function getRepos() {
 
 
 
-export default async function projectsPage() {
+export default async function ProjectsPage() {
 
     const repos: Project[] = await getRepos()
 
