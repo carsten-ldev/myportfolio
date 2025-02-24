@@ -1,11 +1,16 @@
 import { Project } from "../types/github";
 import Link from "next/link";
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || `https://${process.env.VERCEL_URL}`;
 
+const GITHUB_API_URL = `https://api.github.com/users/${process.env.NEXT_PUBLIC_GITHUB_USER_NAME}/starred?sort=updated`
+
+const headers = {
+    "Accept": "application/vnd.github.v3+json",
+    "Authorization": `Bearer ${process.env.NEXT_PUBLIC_GITHUB_ACCESS_TOKEN}`,
+};
 
 async function getRepos() {
-    const response = await fetch(`${API_BASE_URL}/api/projects`);
+    const response = await fetch(GITHUB_API_URL, { headers });
 
   if (!response.ok) {
     throw new Error("Failed to fetch repositories");
