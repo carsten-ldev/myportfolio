@@ -3,9 +3,9 @@ import { marked } from "marked";
 
 export async function GET(
     request: NextRequest, 
-    { params }: { params: { slug: string } }
+    { params }: { params: Promise<{ slug: string }> }
 ) {    
-    const { slug } = await params
+    const slug = (await params).slug
     
     const GITHUB_API_URL = `https://api.github.com/repos/${process.env.NEXT_PUBLIC_GITHUB_USER_NAME}/${slug}/contents/README.md`
 

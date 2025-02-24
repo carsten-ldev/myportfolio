@@ -1,4 +1,4 @@
-export async function getData (slug: string) {
+async function getData (slug: string) {
     
     const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/projects/${slug}`);
 
