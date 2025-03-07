@@ -61,9 +61,9 @@ export default async function ProjectsPage() {
                         {repo.name == "myportfolio" && <span className="text-xs font-bold italic">&nbsp;- this site</span>}
                         </h3>
                         <p>{repo.description}</p>
-                        <h4 className="font-bold mt-2 mb-1 text-gray-600">Technologies:</h4>
+                        <h4 className="font-bold mt-2 mb-1 text-gray-600 dark:text-gray-200">Technologies:</h4>
                         {repo.topics.map(topic => (
-                            <span key={topic} className="bg-teal-200 text-xs inline-block mr-1 py-[0.125rem] px-2 rounded-full">{topic}</span>
+                            <span key={topic} className="bg-teal-200 text-xs inline-block mr-1 py-[0.125rem] px-2 rounded-full dark:text-black">{topic}</span>
                         ))}
                         <footer>
                             <Link className="inline-block px-3 py-1 rounded-full border border-teal-600 border-solid mt-4" href={`/projects/${repo.name}`}>Read more...</Link>
