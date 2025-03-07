@@ -32,7 +32,12 @@ export default async function RepoPage( {params}: {params: Promise<{ slug: strin
     
     return (
         <main className="p-12">
-            <div className="prose max-w-none">
+            <div className="brand-headline font-bold uppercase text-xs tracking-[0.5rem]">My Personal 
+                <span className="font-black text-[2.5rem] leading-[0.8] w-[10ch] uppercase text-teal-500 tracking-tight block -ml-[0.15rem]">
+                    Portfolio
+                </span>
+            </div>
+            <div className="github-readme mt-12">
                 <div dangerouslySetInnerHTML={{ __html: markup }} />
             </div>
         </main>

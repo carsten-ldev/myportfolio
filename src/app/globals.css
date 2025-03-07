@@ -23,3 +23,25 @@ body {
 ::view-transition-group(*) {
   animation-duration: 0.5s;
 }
+
+.github-readme h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  border-bottom: 1px solid;
+}
+
+.github-readme p {
+  margin-top: 1lh;
+}
+
+.github-readme a {
+  color: light-dark(hsl(240, 100%, 50%), hsl(240, 100%, 75%));
+  text-decoration: underline;
+}
+
+.github-readme h2 {
+  font-size: 1.625rem;
+  font-weight: 700;
+  border-bottom: 1px solid;
+  margin-top: 0.5lh;
+}
