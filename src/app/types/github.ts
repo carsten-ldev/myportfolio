@@ -4,6 +4,7 @@ export type Project = {
     language: string;
     description: string;
     url: string;
+    html_url: string;
     topics: string[];
 }
 

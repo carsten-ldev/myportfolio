@@ -24,7 +24,7 @@ async function getRepos() {
 export default async function ProjectsPage() {
 
     const repos: Project[] = await getRepos()
-
+    
 
     if (!repos.length) {
         return (
@@ -55,18 +55,21 @@ export default async function ProjectsPage() {
             <p className="mb-8">This is a showcase of my starred projects. <br />My github contains a lot of other repos used for trying different things. <br />Click &lsquo;read more&lsquo; to learn more about each project. </p>
             <div className="grid gap-4 grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
                 {repos.map(repo => (
-                    <article key={repo.id} className="p-6 border-teal-500 border">
+                    <article key={repo.id} className="p-6 border-teal-500 border flex flex-col">
                         <p className="text-[0.625rem] font-bold uppercase tracking-widest text-gray-400">{repo.language || 'JavaScript'}</p>
                         <h3 className="text-2xl font-bold mb-1">{repo.name} 
                         {repo.name == "myportfolio" && <span className="text-xs font-bold italic">&nbsp;- this site</span>}
                         </h3>
                         <p>{repo.description}</p>
+                        <div>
                         <h4 className="font-bold mt-2 mb-1 text-gray-600 dark:text-gray-200">Technologies:</h4>
                         {repo.topics.map(topic => (
                             <span key={topic} className="bg-teal-200 text-xs inline-block mr-1 py-[0.125rem] px-2 rounded-full dark:text-black">{topic}</span>
                         ))}
-                        <footer>
-                            <Link className="inline-block px-3 py-1 rounded-full border border-teal-600 border-solid mt-4" href={`/projects/${repo.name}`}>Read more...</Link>
+                        </div>
+                        <footer className="mt-auto">
+                            <Link className="inline-block px-3 py-1 rounded-full border border-teal-600 border-solid mt-4" href={`/projects/${repo.name}`}>Read more</Link>
+                            <a className="inline-block px-3 py-1 rounded-full border border-teal-600 border-solid mt-4 ml-4" target="_blank" href={repo.html_url}>View on GitHub</a>
                         </footer>
                     </article>
                 ))
