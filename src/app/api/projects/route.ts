@@ -22,6 +22,7 @@ export async function GET(): Promise<NextResponse<Project[] | { error: string }>
             language: repo.language,
             description: repo.description,
             url: repo.url,
+            html_url: repo.html_url,
             topics: repo.topics || [],
         }));
 
