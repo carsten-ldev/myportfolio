@@ -1,4 +1,5 @@
 import { marked } from "marked";
+import Link from "next/link";
 
 
 async function getData (slug: string) {
@@ -37,6 +38,7 @@ export default async function RepoPage( {params}: {params: Promise<{ slug: strin
                     Portfolio
                 </span>
             </div>
+            <Link className="inline-block px-3 py-1 rounded-full border border-teal-600 border-solid mt-4" href={`/projects`}> &larr;&nbsp;&nbsp;Back to projects</Link>
             <div className="github-readme mt-12">
                 <div dangerouslySetInnerHTML={{ __html: markup }} />
             </div>
