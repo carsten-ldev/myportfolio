@@ -2,7 +2,7 @@ import { marked } from "marked";
 import Link from "next/link";
 
 
-async function getData (slug: string) {
+async function getData (slug: string): Promise<string> {
     
     const GITHUB_API_URL = `https://api.github.com/repos/${process.env.NEXT_PUBLIC_GITHUB_USER_NAME}/${slug}/contents/README.md`
 
