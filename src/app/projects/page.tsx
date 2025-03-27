@@ -9,7 +9,7 @@ const headers = {
     "Authorization": `Bearer ${process.env.NEXT_PUBLIC_GITHUB_ACCESS_TOKEN}`,
 };
 
-async function getRepos() {
+async function getRepos(): Promise<Project[]> {
     const response = await fetch(GITHUB_API_URL, { headers });
 
   if (!response.ok) {
@@ -20,12 +20,10 @@ async function getRepos() {
 }
 
 
-
 export default async function ProjectsPage() {
 
-    const repos: Project[] = await getRepos()
+    const repos = await getRepos()
     
-
     if (!repos.length) {
         return (
             <main className="p-12">

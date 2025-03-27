@@ -6,9 +6,4 @@ export type Project = {
     url: string;
     html_url: string;
     topics: string[];
-}
-
-export type RepoResponse = {
-    error?: string;
-    data?: Project[];
-}
+} 
