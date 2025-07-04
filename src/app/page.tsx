@@ -11,9 +11,6 @@ export default function Home() {
        <p className="text-xl font-semibold">Carsten Lund</p>
        <p className="text-sm font-light tracking-wide flex"><FaEnvelope size="1.25rem" className="mr-2" /> carsten@nielsenoglund.dk <FaLinkedin size="1.25rem" className="mr-2 ml-4" /> linkedin.com/in/carsten-L</p>
         
-       
-            
-
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           
         <Link
