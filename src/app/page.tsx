@@ -8,8 +8,8 @@ export default function Home() {
         <h1 className="brand-headline font-bold uppercase text-2xl tracking-[1rem]">My Personal 
           <span className="font-black text-[9rem]  leading-[0.9] w-[10ch] uppercase text-teal-500 tracking-tight block -ml-3">Portfolio</span>
         </h1>
-       <p className="text-xl font-semibold">Carsten J. Lund</p>
-       <p className="text-sm font-light tracking-wide flex"><FaEnvelope size="1.25rem" className="mr-2" /> carsten@nielsenoglund.dk <FaLinkedin size="1.25rem" className="mr-2 ml-4" /> linkedin.com/in/carsten-j-lund </p>
+       <p className="text-xl font-semibold">Carsten Lund</p>
+       <p className="text-sm font-light tracking-wide flex"><FaEnvelope size="1.25rem" className="mr-2" /> carsten@nielsenoglund.dk <FaLinkedin size="1.25rem" className="mr-2 ml-4" /> linkedin.com/in/carsten-L</p>
         
        
             
