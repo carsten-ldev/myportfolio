@@ -1,5 +1,6 @@
 import { marked } from "marked";
 import Link from "next/link";
+import { FaArrowLeftLong } from "react-icons/fa6";
 
 
 async function getData (slug: string): Promise<string> {
@@ -33,12 +34,16 @@ export default async function RepoPage( {params}: {params: Promise<{ slug: strin
     
     return (
         <main className="p-12">
-            <div className="brand-headline font-bold uppercase text-xs tracking-[0.5rem]">My Personal 
-                <span className="font-black text-[2.5rem] leading-[0.8] w-[10ch] uppercase text-teal-500 tracking-tight block -ml-[0.15rem]">
-                    Portfolio
-                </span>
+                    <div className="flex gap-4 items-center flex-col sm:flex-row">
+
+            <Link
+            className="rounded-full tracking-wide border border-solid border-[#6CE0D6] flex items-center justify-center gap-4 hover:bg-[#6CE0D6]  text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
+            href="/my-work"
+          >
+             <FaArrowLeftLong /> Back to projects
+            </Link>
             </div>
-            <Link className="inline-block px-3 py-1 rounded-full border border-teal-600 border-solid mt-4" href={`/projects`}> &larr;&nbsp;&nbsp;Back to projects</Link>
+            
             <div className="github-readme mt-12">
                 <div dangerouslySetInnerHTML={{ __html: markup }} />
             </div>

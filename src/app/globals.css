@@ -3,9 +3,10 @@
 @tailwind utilities;
 
 :root {
-  color-scheme: dark light;
+  color-scheme: dark;
   --light: #ffffff;
-  --dark: #171717;
+  --dark: #393E46;
+  --accent-color: #6CE0D6
 }
 
 
@@ -25,10 +26,16 @@ body {
 }
 
 .github-readme h1 {
-  font-size: 2.25rem;
-  font-weight: 700;
-  border-bottom: 1px solid;
+  @apply font-mono text-4xl font-medium
+ 
 }
+.github-readme h1::before {
+  content: '#';
+  font-weight: 450;
+  margin-right: 0.5rem;
+  color: var(--accent-color);
+}
+
 
 .github-readme p {
   margin-top: 1lh;

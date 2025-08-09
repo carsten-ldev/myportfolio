@@ -1,30 +1,34 @@
 import Link from "next/link";
-import { FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-merriweather-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <h1 className="brand-headline font-bold uppercase text-2xl tracking-[1rem]">My Personal 
-          <span className="font-black text-[9rem]  leading-[0.9] w-[10ch] uppercase text-teal-500 tracking-tight block -ml-3">Portfolio</span>
-        </h1>
-       <p className="text-xl font-semibold">Carsten J. Lund</p>
-       <p className="text-sm font-light tracking-wide flex"><FaEnvelope size="1.25rem" className="mr-2" /> carsten@nielsenoglund.dk <FaLinkedin size="1.25rem" className="mr-2 ml-4" /> linkedin.com/in/carsten-j-lund </p>
-        
-       
+      <main className="flex flex-col gap-8 w-4/5 mx-auto mt-12">
+        <div>
+        <h1 className="text-3xl leading-[4rem] font-mono">Talk is cheap - show me the code</h1>
+          <p className="text-sm font-mono italic">- Linus Torvalds.  
+       </p>
+       </div>
+
+       <p className="font-sans text-xl leading-relaxed md:w-4/5 xl:w-3/5">
+Well, here it is! I enjoy creating visually appealing user experiences <br/>
+          with the modern JavaScript tech stack.   </p>
+
+          <p className="text-xl leading-8">This is where i showcase projects I am working on. <br/>
+          Feel free to have a look around. </p>
+      
             
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           
         <Link
-            className="rounded-full tracking-wide border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="projects"
+            className="rounded-full tracking-wide border border-solid border-[#6CE0D6] flex items-center justify-center gap-4 hover:bg-[#6CE0D6]  text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
+            href="my-work"
           >
-            View my projects
+           Have a look around  <FaArrowRightLong />
             </Link>
         </div>
       </main>
       
-    </div>
   );
 }

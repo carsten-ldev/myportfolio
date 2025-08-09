@@ -7,12 +7,18 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      'sans': ['Nunito Sans', 'sans-serif'] ,
+      'mono': ['Fira Code', 'monospace']
+    },
     extend: {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        accent: "var(--accent-color",
       },
     },
+
   },
   plugins: [require("@tailwindcss/typography")],
 } satisfies Config;
