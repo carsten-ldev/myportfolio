@@ -12,7 +12,7 @@ export default function ProfilePage() {
             I am an experienced web developer with extensive knowledge of the modern JavaScript tech stack. 
         </p>
         <p className="font-sans text-xl leading-relaxed md:w-4/5 xl:w-3/5">I enjoy creating visually appealing user interfaces that are performant, accessible, and easy to use. </p>
-        <p className="font-sans text-xl leading-relaxed md:w-4/5 xl:w-3/5">I’m particularly curious about how AI is transforming the way we work in frontend development &endash; shaping not only our workflows and the solutions we build, but also how users will interact with the web in the future.</p>
+        <p className="font-sans text-xl leading-relaxed md:w-4/5 xl:w-3/5">I’m particularly curious about how AI is transforming the way we work in frontend development &ndash; shaping not only our workflows and the solutions we build, but also how users will interact with the web in the future.</p>
 
         <h3 className="font-mono text-2xl font-semibold mt-4 mb-2">Feel free to reach out</h3>
        <p className="text-lg font-normal tracking-wide flex mb-4">
