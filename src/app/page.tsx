@@ -16,8 +16,6 @@ Well, here it is! I enjoy creating visually appealing user experiences <br/>
 
           <p className="text-xl leading-8">This is where i showcase projects I am working on. <br/>
           Feel free to have a look around. </p>
-      
-            
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           
