@@ -63,9 +63,9 @@ export default async function ProjectsPage() {
                             <span key={topic} className="bg-[#6CE0D6] text-xs inline-block mr-1 py-[0.125rem] px-2 rounded-full text-gray-700 font-mono font-medium">{topic}</span>
                         ))}
                         </div>
-                        <footer className="mt-auto">
-                            <Link className="font-sans inline-block px-4 py-1 rounded-full border border-[#6CE0D6] border-solid mt-4" href={`/my-work/${repo.name}`}>Read more</Link>
-                            <a className="font-sans inline-block px-4 py-1 rounded-full border border-[#6CE0D6] border-solid mt-4 ml-2" target="_blank" href={repo.html_url}>View on GitHub</a>
+                        <footer className="mt-auto pt-4 flex flex-col gap-4 sm:flex-row sm:gap-2 ">
+                            <Link className="font-sans inline-block px-4 py-1 rounded-full border border-[#6CE0D6] border-solid self-start" href={`/my-work/${repo.name}`}>Read more</Link>
+                            <a className="font-sans inline-block px-4 py-1 rounded-full border border-[#6CE0D6] border-solid self-start" target="_blank" href={repo.html_url}>View on GitHub</a>
                         </footer>
                     </article>
                 ))
