@@ -12,7 +12,7 @@ export default function Home() {
        </p>
        </div>
 
-                    <div className="rounded-full overflow-hidden w-64 ml-[20%] sm:ml-[25%] xl:absolute xl:top-1/4 xl:right-36">
+                    <div className="rounded-full overflow-hidden w-64 ml-[10%] sm:ml-[25%] xl:absolute xl:top-1/4 xl:right-36">
             <Image src={profileimg} alt="Carsten Lund" />
             </div>
 

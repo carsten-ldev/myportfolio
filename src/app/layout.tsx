@@ -29,8 +29,8 @@ export default function RootLayout({
           className={`${nunitosans.variable} antialiased font-sans`}
         >
           <header className="px-12">
-            <div className="flex justify-between">
-          <div className="text-2xl font-extrabold py-12">Carsten Lund </div>
+            <div className="flex flex-col justify-center md:flex-row md:justify-between">
+          <div className="text-2xl font-extrabold py-6 text-center md:text-left md:py-12">Carsten Lund </div>
                     <nav className="flex gap-10 self-center">
             <Link className="font-mono font-medium" href="/">Home</Link>
             <Link className="font-mono font-medium" href="/my-work">My work</Link>
