@@ -5,9 +5,9 @@ import profileimg from "./assets/profile-img.jpeg"
 
 export default function Home() {
   return (
-      <main className="flex flex-col gap-8 w-4/5 mx-auto mt-12">
+      <main className="flex flex-col gap-8 w-4/5 mx-auto my-12">
         <div>
-        <h1 className="text-3xl font-mono text-balance">Talk is cheap - show me the code</h1>
+        <h1 className="text-2xl lg:text-3xl font-mono text-balance">Talk is cheap - show me the code</h1>
           <p className="text-sm font-mono italic mt-1">- Linus Torvalds.  
        </p>
        </div>
