@@ -26,7 +26,7 @@ export default async function ProjectsPage() {
     
     if (!repos.length) {
         return (
-            <main className="p-12">
+            <main className="mx-6 sm:w-4/5 sm:mx-auto my-12">
                 <h1 className="font-bold uppercase text-xs tracking-[0.5rem]">My Personal 
                     <span className="font-black text-[3rem] leading-[0.9] w-[10ch] uppercase text-[#6CE0D6] tracking-tight block -ml-[0.15rem]">
                         Portfolio
@@ -42,7 +42,7 @@ export default async function ProjectsPage() {
     
 
     return (
-        <main className="p-12">
+        <main className="mx-6 sm:mx-12 my-12">
         
         <section className="mt-12">
             <h2 className="font-mono font-medium text-4xl mb-3"><span className="text-[#6CE0D6] tracking-widest mr-1">#</span>Projects</h2>

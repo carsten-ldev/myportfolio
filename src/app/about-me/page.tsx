@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function ProfilePage() {
 
     return (
-      <main className="flex flex-col gap-4 w-4/5 mx-auto my-12">
+      <main className="flex flex-col gap-4 mx-6 sm:w-4/5 sm:mx-auto my-12">
         <h2 className="font-mono font-medium text-4xl md:mb-3"><span className="text-[#6CE0D6] tracking-widest mr-1">#</span>About me</h2>
 
         <p className="font-sans text-xl leading-relaxed md:w-4/5 xl:w-3/5">
