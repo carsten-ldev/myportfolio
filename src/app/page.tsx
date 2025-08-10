@@ -1,21 +1,26 @@
 import Link from "next/link";
 import { FaArrowRightLong } from "react-icons/fa6";
+import Image from "next/image";
+import profileimg from "./assets/profile-img.jpeg"
 
 export default function Home() {
   return (
       <main className="flex flex-col gap-8 w-4/5 mx-auto mt-12">
         <div>
-        <h1 className="text-3xl leading-[4rem] font-mono">Talk is cheap - show me the code</h1>
-          <p className="text-sm font-mono italic">- Linus Torvalds.  
+        <h1 className="text-3xl font-mono text-balance">Talk is cheap - show me the code</h1>
+          <p className="text-sm font-mono italic mt-1">- Linus Torvalds.  
        </p>
        </div>
 
-       <p className="font-sans text-xl leading-relaxed md:w-4/5 xl:w-3/5">
-Well, here it is! I enjoy creating visually appealing user experiences <br/>
-          with the modern JavaScript tech stack.   </p>
+                    <div className="rounded-full overflow-hidden w-64 ml-[20%] sm:ml-[25%] xl:absolute xl:top-1/4 xl:right-36">
+            <Image src={profileimg} alt="Carsten Lund" />
+            </div>
 
-          <p className="text-xl leading-8">This is where i showcase projects I am working on. <br/>
-          Feel free to have a look around. </p>
+      <p className="font-sans text-xl leading-relaxed md:w-4/5 xl:w-3/5">
+      I'm Carsten, a frontend developer who currently has the amazing privilege of inspiring future Danish frontend developers. I enjoy creating visually appealing user experiences with the modern JavaScript tech stack.</p>
+            
+                 
+          <p className="text-xl leading-8">And here it is. The code. On this site I showcase some of my projects.</p>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           
