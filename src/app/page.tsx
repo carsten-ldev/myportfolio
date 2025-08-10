@@ -17,7 +17,7 @@ export default function Home() {
             </div>
 
       <p className="font-sans text-xl leading-relaxed md:w-4/5 xl:w-3/5">
-      I'm Carsten, a frontend developer who currently has the amazing privilege of inspiring future Danish frontend developers. I enjoy creating visually appealing user experiences with the modern JavaScript tech stack.</p>
+      I&apos;m Carsten, a frontend developer who currently has the amazing privilege of inspiring future Danish frontend developers. I enjoy creating visually appealing user experiences with the modern JavaScript tech stack.</p>
             
                  
           <p className="text-xl leading-8">And here it is. The code. On this site I showcase some of my projects.</p>
