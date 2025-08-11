@@ -1,4 +1,4 @@
-export type Project = {
+export type Repo = {
     id: number;
     name: string;
     language: string;
