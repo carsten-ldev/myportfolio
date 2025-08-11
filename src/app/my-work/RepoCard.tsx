@@ -24,7 +24,7 @@ export default function RepoCard({ repo }: { repo: Repo }) {
         {repo.topics.map((topic) => (
           <span
             key={topic}
-            className="bg-[#6CE0D6] text-xs inline-block mr-1 py-[0.125rem] px-2 rounded-full text-gray-700 font-mono font-medium"
+            className="bg-[#6CE0D6] text-xs inline-block mr-1 py-0.5 px-2 rounded-full text-gray-700 font-mono font-medium"
           >
             {topic}
           </span>

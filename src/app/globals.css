@@ -1,21 +1,16 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 :root {
   color-scheme: dark;
   --light: #ffffff;
-  --dark: #393E46;
-  --accent-color: #6CE0D6
+  --dark: #393e46;
+  --accent-color: #6ce0d6;
 }
-
-
 
 body {
-  color: light-dark(var(--dark), var(--light)) ;
+  color: light-dark(var(--dark), var(--light));
   background: light-dark(var(--light), var(--dark));
 }
-
 
 .brand-name {
   view-transition-name: --brand-name;
@@ -26,16 +21,14 @@ body {
 }
 
 .github-readme h1 {
-  @apply font-mono text-4xl font-medium
- 
+  @apply font-mono text-4xl font-medium;
 }
 .github-readme h1::before {
-  content: '#';
+  content: "#";
   font-weight: 450;
   margin-right: 0.5rem;
   color: var(--accent-color);
 }
-
 
 .github-readme p {
   margin-top: 1lh;
