@@ -1,10 +1,16 @@
 @import "tailwindcss";
 
+@theme {
+  --color-accent: hsl(168, 51%, 29%);
+  --color-accent-light: hsl(168, 51%, 54%);
+  --font-besley: Besley, serif;
+  --font-serif: "Source Serif 4", serif;
+}
+
 :root {
-  color-scheme: dark;
+  color-scheme: light;
   --light: #ffffff;
-  --dark: #393e46;
-  --accent-color: #6ce0d6;
+  --dark: rgb(47, 50, 54);
 }
 
 body {
@@ -21,13 +27,7 @@ body {
 }
 
 .github-readme h1 {
-  @apply font-mono text-4xl font-medium;
-}
-.github-readme h1::before {
-  content: "#";
-  font-weight: 450;
-  margin-right: 0.5rem;
-  color: var(--accent-color);
+  @apply font-besley text-accent text-4xl font-extrabold;
 }
 
 .github-readme p {

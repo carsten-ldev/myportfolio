@@ -40,8 +40,8 @@ export default async function ProjectsPage() {
   return (
     <main className="mx-6 sm:mx-12 my-12">
       <section className="mt-12">
-        <h2 className="font-mono font-medium text-4xl mb-3">
-          <span className="text-[#6CE0D6] tracking-widest mr-1">#</span>Projects
+        <h2 className="font-besley font-extrabold text-accent text-4xl mb-3">
+          My Projects
         </h2>
         <p className="mb-8">
           This is a showcase of my starred projects. <br />
@@ -49,7 +49,7 @@ export default async function ProjectsPage() {
           things. <br />
           Click &lsquo;read more&lsquo; to learn more about each project.{" "}
         </p>
-        <div className="grid gap-4 grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
+        <div className="grid gap-6 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
           {repos.map((repo) => (
             <RepoCard key={repo.id} repo={repo} />
           ))}
